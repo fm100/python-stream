@@ -1,7 +1,6 @@
 import sys
-from unittest.mock import call
-from unittest.mock import patch
-
+from mock import call
+from mock import patch
 from stream import Stream
 
 

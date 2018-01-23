@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fm100/python-stream.svg?branch=master)](https://travis-ci.org/fm100/python-stream)
+
 # python-stream (simplestream)
 Stream pipeline API with lazy evaluation inspired by Java 8
 

@@ -91,3 +91,11 @@ class TestStream:
         with patch('sys.stdout.write') as mock_print:
             Stream(['a', 'b', 'c']).foreach(sys.stdout.write)
             mock_print.assert_has_calls([call('a'), call('b'), call('c')])
+
+    def test_chain(self):
+        s1 = Stream([1, 2, 3])
+        s2 = Stream([4, 5, 6])
+        s3 = Stream([7, 8, 9])
+        expected = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        actual = Stream.chain(s1, s2, s3).collect(list)
+        assert expected == actual

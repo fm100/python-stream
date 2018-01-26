@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='simplestream',
-    version='0.1.0a1',
+    version='0.1.0',
     description='Java 8 like stream API',
     url='https://github.com/fm100/stream',
     author='Minkyu Park',
@@ -16,7 +16,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',

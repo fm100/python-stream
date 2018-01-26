@@ -1,5 +1,6 @@
 .DS_Store
 .idea
+.coverage
 __pycache__
 *.py[co]
 env

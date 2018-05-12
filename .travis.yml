@@ -13,10 +13,13 @@ python:
   - "pypy3"
 
 install:
-  - pip install -r requirements-dev.txt
+  - pip install --upgrade pip
+  - pip install pipenv
+  - pipenv install --dev
+  - pipenv install --system --dev
 
 script:
-  - py.test --cov=./stream
+  - pipenv run py.test --cov=./stream
 
 after_success:
   - codecov

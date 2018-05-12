@@ -1,7 +1,6 @@
 .DS_Store
 .idea
 .coverage
-Pipfile.lock
 .pytest_cache
 __pycache__
 *.py[co]

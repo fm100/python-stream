@@ -15,8 +15,6 @@ python:
 install:
   - pip install --upgrade pip
   - pip install pipenv
-  - pipenv install --dev
-  - pipenv install --system --dev
 
 script:
   - pipenv run py.test --cov=./stream
